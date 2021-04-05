@@ -22,6 +22,17 @@ textarea {
     color: $color-black;
 }
 
+.navbar__header {
+    background-color: #191B29;
+    padding: 2em 0;
+
+    .content {
+        img {
+            width: 10%;
+        }
+    }
+}
+
 .banner-main {
     position: relative;
     background-image: url('../images/Untitled-6.jpg.webp');
@@ -323,8 +334,15 @@ textarea {
 }
 
 @media (max-width: 768px) {
-    .main-step {
+    .navbar__header {
+        .content {
+            img {
+                width: 50%;
+            }
+        }
+    }
 
+    .main-step {
 
         &__contentright {
             text-align: center;
@@ -347,6 +365,8 @@ textarea {
     }
 
     .banner-main__form {
+
+
         .submitfrom {
             text-align: center;
         }
@@ -354,5 +374,18 @@ textarea {
 
     .navbar__header {
         text-align: center;
+    }
+}
+
+@media (min-width:769px) and(max-width: 1024px) {
+    .banner-main__form {
+        top: 32%;
+        left: 32%;
+        height: auto;
+    }
+
+    .banner-main__desc {
+        top: 6%;
+        right: 16%;
     }
 }
