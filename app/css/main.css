@@ -236,7 +236,7 @@ textarea {
   padding-bottom: 1em;
 }
 
-.main-maps img {
+.main-maps div img {
   width: 100% !important;
 }
 
@@ -334,5 +334,32 @@ textarea {
   color: #fff;
   text-align: center;
   font-weight: 300;
+}
+
+@media (max-width: 768px) {
+  .main-step__contentright {
+    text-align: center;
+    border: none;
+    padding: 0;
+  }
+  .main-step__contentright ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0;
+  }
+  .main-step__contentright div {
+    padding: 0;
+  }
+  .banner-main__desc {
+    display: none;
+  }
+  .banner-main__form .submitfrom {
+    text-align: center;
+  }
+  .navbar__header {
+    text-align: center;
+  }
 }
 /*# sourceMappingURL=main.css.map */

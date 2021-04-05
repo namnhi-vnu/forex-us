@@ -31,6 +31,7 @@ textarea {
     height: 100vh;
 
 
+
     &::after {
         content: "";
         display: block;
@@ -228,7 +229,7 @@ textarea {
         padding-bottom: 1em;
     }
 
-    img {
+    div img {
         width: 100% !important;
     }
 }
@@ -318,5 +319,40 @@ textarea {
         color: $color-white;
         text-align: center;
         font-weight: 300;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-step {
+
+
+        &__contentright {
+            text-align: center;
+            border: none;
+            padding: 0;
+
+            ul {
+                flex-direction: column;
+                padding: 0;
+            }
+
+            div {
+                padding: 0;
+            }
+        }
+    }
+
+    .banner-main__desc {
+        display: none;
+    }
+
+    .banner-main__form {
+        .submitfrom {
+            text-align: center;
+        }
+    }
+
+    .navbar__header {
+        text-align: center;
     }
 }
